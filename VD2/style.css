@@ -1,0 +1,76 @@
+#hienthigame {
+  display: flex;
+  flex-wrap: wrap;
+  width: 305px;
+  height: 315px;
+  border: 1px solid black;
+}
+
+.hinhvuong {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 36px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: green;
+}
+
+#phai {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+#trai {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+#board-input th,
+#board-input td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+table button {
+  border: 1px solid #ddd;
+  color: black;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: rgb(63, 196, 63);
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green;
+}

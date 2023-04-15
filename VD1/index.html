@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADN mã hóa, lưu trữ văn bản</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery.slim.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ví dụ: ADN mã hóa, lưu trữ văn bản</h1>
+        <form class="bg-light p-4 m-4">
+            <div class="form-group">
+                <h6>Gợi ý input:</h6>
+                <button type="button" class="btn btn-outline-primary" onclick="Input1()">
+                    Ví dụ về ADN mã hóa dữ liệu và lưu trữ văn bản
+                </button>
+                <button type="button" class="btn btn-outline-success" onclick="Input2()">
+                    TAGA TGTT TGCA TGCA TGCC AGAA TTTC TGCC TCAG TGCA TGTA
+                </button>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="radio1">
+                    <input type="radio" class="form-check-input" id="radio1" name="CHUC_NANG"
+                        value="CHUYEN_VAN_BAN_THANH_ADN" checked>Chuyển văn bản thành ADN
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label" for="radio2">
+                    <input type="radio" class="form-check-input" id="radio2" name="CHUC_NANG"
+                        value="CHUYEN_ADN_THANH_VAN_BAN">Chuyển ADN thành văn bản
+                </label>
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="input-group ">
+                    <input type="text" id="INPUT" class="form-control" placeholder="Nhập nội dung">
+                    <button type="button" class="btn btn-outline-warning" onclick="Main()">Chuyển đổi</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <form class="bg-light p-4 m-4">
+            <div id="OUTPUT0">Bước 0: </div>
+            <br>
+            <div id="OUTPUT1">Bước 1: </div>
+            <br>
+            <div id="OUTPUT2">Bước 2: </div>
+            <br>
+            <div id="OUTPUT3">Bước 3: </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

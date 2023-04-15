@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="phai">
+        <h1>Tic Tac Toe</h1>
+        <table id="hienthigame">
+            <tr>
+                <td class="hinhvuong 1"> </td>
+                <td class="hinhvuong 2"> </td>
+                <td class="hinhvuong 3"> </td>
+            </tr>
+            <tr>
+                <td class="hinhvuong 4"> </td>
+                <td class="hinhvuong 5"> </td>
+                <td class="hinhvuong 6"> </td>
+            </tr>
+            <tr>
+                <td class="hinhvuong 7"> </td>
+                <td class="hinhvuong 8"> </td>
+                <td class="hinhvuong 9"> </td>
+            </tr>
+        </table>
+        <br>
+        <form class="form-inline">
+            <input placeholder="Nhập ADN Input" type="text" id="player-input" readonly>
+            <button type="button" id="submit-button" class="btn submit">Submit</button>
+        </form>
+        <h1 id="ketthuc"></h1>
+    </div>
+    <div id="trai">
+        <h1> ADN Input </h1>
+        <table id="board-input">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>11</td>
+                            <td id="seq11">AACGACTGCACCACG</td>
+                            <td><button id="button11" onclick="CoppyInput(11)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td id="seq12">CTCTCCCTGTACCCA</td>
+                            <td><button id="button12" onclick="CoppyInput(12)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td id="seq13">ACCCCTCTCGCTCTT</td>
+                            <td><button id="button13" onclick="CoppyInput(13)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td id="seq14">TTCTGCCTTGATCCG</td>
+                            <td><button id="button14" onclick="CoppyInput(14)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>21</td>
+                            <td id="seq21">TGTTGTCTTATCCAT</td>
+                            <td><button id="button21" onclick="CoppyInput(21)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td id="seq22">TCAGATGCTACGTGT</td>
+                            <td><button id="button22" onclick="CoppyInput(22)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td id="seq23">ACCGTACTCGACCTA</td>
+                            <td><button id="button23" onclick="CoppyInput(23)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td id="seq24">TCGGATCTCGGTTTC</td>
+                            <td><button id="button24" onclick="CoppyInput(24)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>31</td>
+                            <td id="seq31">TACACGCTGGTCAAT</td>
+                            <td><button id="button31" onclick="CoppyInput(31)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td id="seq32">CACTATCTCGAATCA</td>
+                            <td><button id="button32" onclick="CoppyInput(32)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td id="seq33">GCGTGACTGCGGCAT</td>
+                            <td><button id="button33" onclick="CoppyInput(33)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td id="seq34">GTTGGTCTTGTAGGA</td>
+                            <td><button id="button34" onclick="CoppyInput(34)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>41</td>
+                            <td id="seq41">GCTAGGCTATCGCGT</td>
+                            <td><button id="button41" onclick="CoppyInput(41)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td id="seq42">TAATACCTGAGCGGG</td>
+                            <td><button id="button42" onclick="CoppyInput(42)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td id="seq43">TACCCCCTAGTCTGC</td>
+                            <td><button id="button43" onclick="CoppyInput(43)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td id="seq44">AACGGACTTCAACAG</td>
+                            <td><button id="button44" onclick="CoppyInput(44)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>61</td>
+                            <td id="seq61">CGGGATCTCGTCGGT</td>
+                            <td><button id="button61" onclick="CoppyInput(61)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td id="seq62">ATCGCTCTCCATGCA</td>
+                            <td><button id="button62" onclick="CoppyInput(62)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td id="seq63">ATCTATCTCGTTCCG</td>
+                            <td><button id="button63" onclick="CoppyInput(63)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td id="seq64">ACTCCGCTCGACTTA</td>
+                            <td><button id="button64" onclick="CoppyInput(64)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>71</td>
+                            <td id="seq71">GGATCACTTACGTAT</td>
+                            <td><button id="button71" onclick="CoppyInput(71)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td id="seq72">GGTAGCCTTTTATCG</td>
+                            <td><button id="button72" onclick="CoppyInput(72)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td id="seq73">CATTGCCTCGATATC</td>
+                            <td><button id="button73" onclick="CoppyInput(73)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td id="seq74">CCAGACCTTTCAAGT</td>
+                            <td><button id="button74" onclick="CoppyInput(74)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>81</td>
+                            <td id="seq81">TGCGTACTTTGGGTC</td>
+                            <td><button id="button81" onclick="CoppyInput(81)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td id="seq82">TCAGGGCTACGCAAG</td>
+                            <td><button id="button82" onclick="CoppyInput(82)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td id="seq83">TAATTACTGTTTCAC</td>
+                            <td><button id="button83" onclick="CoppyInput(83)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td id="seq84">GGATGCCTGGCGTCT</td>
+                            <td><button id="button84" onclick="CoppyInput(84)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>91</td>
+                            <td id="seq91">TGCTATCTCGACAAG</td>
+                            <td><button id="button91" onclick="CoppyInput(91)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>92</td>
+                            <td id="seq92">CTCAGGCTGTGTATT</td>
+                            <td><button id="button92" onclick="CoppyInput(92)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>93</td>
+                            <td id="seq93">CAGAGCTATACGGAG</td>
+                            <td><button id="button93" onclick="CoppyInput(93)">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td>94</td>
+                            <td id="seq94">GCTACTCTGGGTGCT</td>
+                            <td><button id="button94" onclick="CoppyInput(94)">Copy</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
